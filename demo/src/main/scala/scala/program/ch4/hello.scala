@@ -1,4 +1,4 @@
-package fn.demo.scala.ch4
+package scala.program.ch4
 
 object Hello extends App {
   println("hello world!")

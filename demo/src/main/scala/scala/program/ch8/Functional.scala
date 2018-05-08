@@ -1,4 +1,4 @@
-package fn.demo.scala.ch8
+package scala.program.ch8
 
 object Functional {
   def main(args: Array[String]): Unit = {
