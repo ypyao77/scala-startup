@@ -1,4 +1,4 @@
-package fn.demo.scala.ch8
+package scala.program.ch8
 
 import scala.io.Source
 

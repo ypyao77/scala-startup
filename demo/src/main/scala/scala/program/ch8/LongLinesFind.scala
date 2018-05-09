@@ -1,4 +1,4 @@
-package fn.demo.scala.ch8
+package scala.program.ch8
 
 object LongLinesFind {
   def main(args: Array[String]): Unit = {

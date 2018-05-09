@@ -1,6 +1,6 @@
 package scala.program.ch7
 
-object Hello extends App {
+object Grep extends App {
   def fileLines(file: java.io.File) =
     scala.io.Source.fromFile(file).getLines.toList
 

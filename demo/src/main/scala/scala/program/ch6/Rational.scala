@@ -1,4 +1,4 @@
-package fn.demo.scala.ch6
+package scala.program.ch6
 
 class Rational(n: Int, d: Int) {
   require(d != 0)

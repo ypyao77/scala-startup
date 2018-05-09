@@ -1,7 +1,7 @@
 package scala.program.ch16
 
 object MyList {
-  val func1 = {
+  def func1 = {
     println("\nin func1()")
 
     val fruits = List("apple", "orange", "pear")
@@ -19,7 +19,7 @@ object MyList {
     println("empty: " + empty)
   }
 
-  val func2 = {
+  def func2 = {
     println("\nin func2()")
 
     val fruits = "apple" :: "orange" :: "pear" :: Nil
@@ -48,7 +48,7 @@ object MyList {
     case y :: ys => if (x <= y) x :: xs else y :: insert(x, ys)
   }
 
-  val func3 = {
+  def func3 = {
     println("\nin func3()")
 
     var l: List[Int] = List()
@@ -65,7 +65,8 @@ object MyList {
     l = insert(6, l)
     println("l: " + l)
   }
-  val func4 = {
+
+  def func4 = {
     println("\nin func4()")
 
     var l: List[Int] = List(1, 4, 7, 2, 5, 8, 3, 6, 9)
@@ -73,17 +74,77 @@ object MyList {
     println("l: " + l)
   }
 
-  val func5 = {
+  def func5 = {
     println("\nin func5()")
 
     val l = List(1, 2) ::: List(3, 4, 5)
     println("l: " + l)
   }
+
+  def merge[T](xs: List[T], ys: List[T]): List[T] = xs match {
+    case List() => ys
+    case x :: xs1 => x :: merge(xs1, ys)
+  }
+
+  def func6 = {
+    println("\nin func6()")
+    val l = merge(List(1, 2), List(3, 4, 5))
+    println("merge(List(1, 2), List(3, 4, 5): " + l)
+    println("l.drop(2): " + l.drop(2))
+    println("l: " + l)
+    println("l.take(2): " + l.take(2))
+    println("l: " + l)
+    println("l.splitAt(3): " + l.splitAt(3))
+  }
+
+  def func7 = {
+    println("\nin func7()")
+    val s = "abcde"
+    val a = List('a', 'b', 'c', 'd', 'e')
+    val l = s.indices zip s
+
+    println("l: " + l)
+    println("s.toString: " + s.toString)
+    println("a.mkString(\"<<<\", \", \", \">>>\"): " + a.mkString("<<<", ", ", ">>>"))
+  }
+
+  def func8 = {
+    println("\nin func8()")
+    val a = "abcde"
+    println("a.toArray: " + a.toArray)
+    println("a.toList: " + a.toList)
+  }
+
+  def mergesort[T](less: (T, T) => Boolean)(xs: List[T]): List[T] = {
+    def merge(xs: List[T], ys: List[T]): List[T] = (xs, ys) match {
+      case (Nil, _) => ys
+      case (_, Nil) => xs
+      case (x :: xs1, y :: ys1) => if (less(x, y)) x :: merge(xs1, ys) else y :: merge(xs, ys1)
+    }
+
+    val n = xs.length / 2
+    if (n == 0) xs
+    else {
+      val (ys, zs) = xs splitAt n
+      merge(mergesort(less)(ys), mergesort(less)(zs))
+    }
+  }
+
+  def func9 = {
+    println("\nin func8()")
+    val l = List(5, 7, 1, 9, 3)
+    println("mergesort(l): " + mergesort((x: Int, y: Int) => x < y)(l))
+  }
+
   def main(args: Array[String]): Unit = {
-    MyList.func1
-    MyList.func2
-    MyList.func3
-    MyList.func4
-    MyList.func5
+    func1
+    func2
+    func3
+    func4
+    func5
+    func6
+    func7
+    func8
+    func9
   }
 }

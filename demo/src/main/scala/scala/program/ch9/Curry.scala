@@ -1,4 +1,4 @@
-package fn.demo.scala.ch9
+package scala.program.ch9
 
 object Curry {
   def ff(x: Int)(y: Int) = x + y
