@@ -44,6 +44,8 @@ class Rational(n: Int, d: Int) {
     if (b == 0) a else gcd(b, a % b)
 }
 
-object Rational extends App {
+object Rational {
+  def main(args: Array[String]): Unit = {
 
+  }
 }

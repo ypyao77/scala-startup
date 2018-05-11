@@ -34,5 +34,15 @@ object Person {
 
     val s1 = for (p <- persons; n = p.name; if (n.startsWith("C"))) yield n
     println("s1 = " + s1)
+
+    val s2 = for {
+      p <- persons
+      n = p.name
+      if (n.startsWith("C") || n.startsWith("B"))
+    } yield n
+    println("s2 = " + s2)
+
+    val r1 = for (x <- (1 to 10); y <- (1 to 11); if (x + 1 == y)) yield (x, y)
+    println("r1 = " + r1)
   }
 }

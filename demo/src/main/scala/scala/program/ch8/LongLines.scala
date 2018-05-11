@@ -12,4 +12,8 @@ object LongLines {
       processLine(filename, width, line)
     }
   }
+
+  def main(args: Array[String]): Unit = {
+
+  }
 }
