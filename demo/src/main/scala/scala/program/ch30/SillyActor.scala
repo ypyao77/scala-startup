@@ -2,7 +2,7 @@ package scala.program.ch30
 
 import akka.actor._
 
-object SillyActor extends Actor {
+object SillyActor /*extends Actor*/ {
   def act(): Unit = {
     for (i <- 1 to 5) {
       println("I'm acting ...")
