@@ -1,4 +1,4 @@
-package org.algorithmdog.akkalearning
+package akka.demo.lietal.algorithmdog
 
 /**
   * Created by lietal on 2016/12/22.

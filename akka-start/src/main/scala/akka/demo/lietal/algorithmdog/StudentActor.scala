@@ -1,4 +1,4 @@
-package org.algorithmdog.akkalearning
+package akka.demo.lietal.algorithmdog
 
 import akka.actor.{Actor, ActorLogging, ActorRef, ActorSystem, Props}
 import com.typesafe.config.ConfigFactory

@@ -1,4 +1,4 @@
-package org.algorithmdog.akkalearning
+package akka.demo.lietal.algorithmdog
 
 import akka.actor.{ActorSystem, Props}
 

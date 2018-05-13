@@ -1,4 +1,4 @@
-package person.lietal.akkalearning
+package akka.demo.lietal.learning
 
 /**
   * Created by lietal on 2016/12/22.

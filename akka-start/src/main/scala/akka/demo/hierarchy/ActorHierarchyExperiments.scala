@@ -1,6 +1,7 @@
-package akka.demo
+package akka.demo.hierarchy
 
-import akka.actor.{ Actor, Props, ActorSystem }
+import akka.actor.{Actor, ActorSystem, Props}
+
 import scala.io.StdIn
 
 class PrintMyActorRefActor extends Actor {
