@@ -1,4 +1,4 @@
-name := "local"
+name := "akka-start"
 
 version := "0.1"
 

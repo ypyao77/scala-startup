@@ -1,4 +1,4 @@
-package scala.akka.local
+package akka.demo
 
 import akka.actor._
 import org.json.JSONObject
