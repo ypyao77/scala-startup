@@ -1,0 +1,22 @@
+Welcome to Apache Commons
+
+Apache Commons is an Apache project focused on all aspects of reusable Java components.
+
+The Apache Commons project is composed of three parts:
+
+    The Commons Proper - A repository of reusable Java components.
+    The Commons Sandbox - A workspace for Java component development.
+    The Commons Dormant - A repository of components that are currently inactive.
+
+You may also read our charter, which spells out the goals of the project in greater detail.
+
+The Apache Commons source code repositories are writable for all ASF committers. While Apache Commons is a Commit-Then-Review community, we would consider it polite and helpful for contributors to announce their intentions and plans on the dev mailing list before committing code. All contributors should read our contributing guidelines. We accept patches as SVN diff files uploaded to the Apache bugtracker or as pull request via our github mirrors.
+Apache Commons Proper
+
+Commons Proper is dedicated to one principal goal: creating and maintaining reusable Java components. The Commons Proper is a place for collaboration and sharing, where developers from throughout the Apache community can work together on projects to be shared by the Apache projects and Apache users.
+
+Commons developers will make an effort to ensure that their components have minimal dependencies on other libraries, so that these components can be deployed easily. In addition, Commons components will keep their interfaces as stable as possible, so that Apache users (including other Apache projects) can implement these components without having to worry about changes in the future.
+
+This article gives an overview of (some of) the components which can be found here.
+
+We welcome participation from all that are interested, at all skill levels. Coding, documentation and testing are all critical parts of the software development process. If you are interested in participating in any of these aspects, please join us!
