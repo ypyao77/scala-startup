@@ -16,7 +16,14 @@ object Expr {
     println("toMatch('c'): " + toMatch('c'))
   }
 
+  def func2(): Unit = {
+    println("\nin func2()")
+
+    val (q, r) = BigInt(87) /% 10
+    println("q = " + q + ", r = " + r)
+  }
   def main(args: Array[String]): Unit = {
     func1()
+    func2()
   }
 }
