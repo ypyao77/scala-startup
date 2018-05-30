@@ -6,7 +6,7 @@ object Singleton {
     var title = ""
     var author = ""
 
-    def setTitle(title: String) : this.type = { this.title = title; this}
+    def setTitle(title: String) : this.type = { this.title = title; this }
     def setAuthor(author: String) : this.type= { this.author = author; this }
 
     override def toString = "Document(" + title + ", " + author + ")"
