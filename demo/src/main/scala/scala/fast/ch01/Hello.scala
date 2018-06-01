@@ -6,7 +6,7 @@ object Hello {
 
     val s = "Hello World!!"
     println("s = " + s)
-    println("s.toCharArray = " + s.toCharArray)
+    println("s.toCharArray = " + s.toCharArray.mkString(""))
     s.toCharArray.foreach(print)
     println
     println("s.toLowerCase = " + s.toLowerCase)

@@ -1,4 +1,4 @@
-package scala.program.ch30
+package akka.demo.ch30
 
 import akka.actor._
 

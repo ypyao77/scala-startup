@@ -1,4 +1,4 @@
-package scala.program.ch30
+package akka.demo.ch30
 
 object PingPong2 {
   import akka.actor.{ActorSystem, Actor, ActorRef, Props, PoisonPill}

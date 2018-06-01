@@ -1,4 +1,4 @@
-package scala.program.ch30
+package akka.demo.ch30
 
 import akka.actor.{ActorRef, ActorSystem, Props, Actor, Inbox}
 import scala.concurrent.duration._
