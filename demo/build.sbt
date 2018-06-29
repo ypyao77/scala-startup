@@ -6,6 +6,9 @@ scalaVersion := "2.12.6"
 
 javacOptions ++= Seq("-encoding", "UTF-8")
 
+resolvers += "Maven Fn" at "http://maven.fn.com/nexus/content/groups/public"
+resolvers += "Maven Central" at "https://mvnrepository.com"
+
 /*
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % "2.5.12",
