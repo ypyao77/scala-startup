@@ -1,6 +1,6 @@
 package fn.scala.fast.ch17
 
-import scala.fast.ch17.T4.YoungStudent
+import fn.scala.fast.ch17.T4.YoungStudent
 
 object T4 {
   class Person

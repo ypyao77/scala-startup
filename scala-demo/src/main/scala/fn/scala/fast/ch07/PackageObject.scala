@@ -1,6 +1,6 @@
 package fn.scala.fast.ch07
 
-import scala.fast.ch07.people.Person
+import fn.scala.fast.ch07.people.Person
 
 package object people {
   val defaultName = "John Q. Public"
