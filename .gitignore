@@ -1,3 +1,12 @@
+/sbt-demo/.bsp
+/sbt-demo/project/target
+/sbt-demo/project/project
+/sbt-demo/.idea
+/sbt-demo/null
+/sbt-demo/target
+/scala-demo/.bsp
+/scala-demo/project/target
+/scala-demo/project/project
 /scala-demo/.idea
 /scala-demo/null
 /scala-demo/target
