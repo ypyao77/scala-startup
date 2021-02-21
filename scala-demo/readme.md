@@ -20,4 +20,9 @@
     $ java -Djava.ext.dirs=<多个jar包的目录> com.test.HelloWordMain
     如果用-cp则需要写每一个jar，很麻烦。
 
-
+使用国内镜像：
+    $ cat ~/.sbt/repositories
+        [repositories]
+        local
+        maven-local
+        central: https://maven.aliyun.com/repository/central
