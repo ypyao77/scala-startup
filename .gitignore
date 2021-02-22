@@ -13,3 +13,13 @@
 /scala-pom/.idea
 /scala-pom/target
 /scala-pom/scala-pom.iml
+/sbt-multi-proj/.bsp
+/sbt-multi-proj/project/target
+/sbt-multi-proj/project/project
+/sbt-multi-proj/.idea
+/sbt-multi-proj/null
+/sbt-multi-proj/target
+/sbt-multi-proj/sub1/target
+/sbt-multi-proj/sub2/target
+/sbt-multi-proj/sub3/target
+
