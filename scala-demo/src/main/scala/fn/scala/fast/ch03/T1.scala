@@ -7,11 +7,19 @@ object T1 {
   }
 
   def main(args: Array[String]): Unit = {
+    println("gen(3): ")
+    gen(3).foreach(println)
+
     println("gen(10): ")
-    gen(10).foreach(println)
+    gen(10).foreach(i => print(i + " "))
+    println()
+
     println("gen(15): ")
-    gen(15).foreach(println)
+    gen(15).foreach(i => print(i + " "))
+    println()
+
     println("gen(20): ")
-    gen(20).foreach(println)
+    gen(20).foreach(i => print(i + " "))
+    println()
   }
 }

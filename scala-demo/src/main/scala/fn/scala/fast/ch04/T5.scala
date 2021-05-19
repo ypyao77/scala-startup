@@ -2,9 +2,12 @@ package fn.scala.fast.ch04
 
 object T5 {
   def main(args: Array[String]): Unit = {
-    import scala.collection.JavaConversions.mapAsScalaMap
+    // import scala.collection.JavaConversions.mapAsScalaMap
+    // val words: scala.collection.mutable.Map[String, Int] = new java.util.TreeMap[String, Int]
 
-    val words: scala.collection.mutable.Map[String, Int] = new java.util.TreeMap[String, Int]
+    import scala.collection.JavaConverters._
+
+    val words: scala.collection.mutable.Map[String, Int] = new java.util.TreeMap[String, Int].asScala
     val in4 = new java.util.Scanner(new java.io.File("myfile.txt"))
 
     while (in4.hasNext()) {
