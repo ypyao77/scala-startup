@@ -3,7 +3,7 @@ package fn.scala.fast.ch11
 object Apply {
 
   class Fraction(n: Int, d: Int) {
-    override def toString = "Frantion(" + n + ", " + d + ")"
+    override def toString = "Fraction(" + n + ", " + d + ")"
   }
 
   object Fraction {
