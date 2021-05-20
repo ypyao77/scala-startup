@@ -1,6 +1,6 @@
 package fn.scala.fast.ch08
 
-object D83 {
+object D0803 {
   class Person(val name: String) {
     override def toString: String = "Person(name=" + name + ")"
   }

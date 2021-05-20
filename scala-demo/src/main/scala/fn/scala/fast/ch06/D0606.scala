@@ -1,6 +1,6 @@
 package fn.scala.fast.ch06
 
-object D66 {
+object D0606 {
   object TLC1 extends Enumeration {
     val Red, Yellow, Green = Value
   }

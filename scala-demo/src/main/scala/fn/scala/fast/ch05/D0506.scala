@@ -2,7 +2,7 @@ package fn.scala.fast.ch05
 
 import scala.beans.BeanProperty
 
-object D56 {
+object D0506 {
   class Person {
     private var name = "default"
     private var age = 0

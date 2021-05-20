@@ -1,38 +1,30 @@
 package fn.scala.fast.ch11
 
 object D1110 {
-  class Name(name: String) {
+  class Name(n: String) {
+    val name = n
     override def toString = "Name(" + name + ")"
   }
 
   object Name {
     def apply(name: String) = new Name(name)
-    def unapplySeq(name: String): Option[Seq[String]] =
-      if (name.trim == "") None else Some(name.trim.split("\\s+"))
+
+    def unapplySeq(name: Name): Option[Seq[String]] =
+      if (name.name.trim == "") None else Some(name.name.trim.split("\\s+"))
   }
 
-  def dump(author: Any): Unit = {
-    author match {
+  def meet(author: Name): Unit = author match {
       case Name(first) => println("Name1: " + first)
       case Name(first, last) => println("Name2: " + first + ", " + last)
       case Name(first, middle, last) => println("Name3: " + first + ", " + middle + ", " + last)
       case _ => println("Name Unknown")
-    }
   }
 
   def main(args: Array[String]): Unit = {
-    dump(Name("aaa"))
-    dump(Name("aaa bbb"))
-    dump(Name("aaa bbb ccc"))
-    dump(Name("aaa bbb ccc ddd"))
-
-    val author = Name("aaa bbb")
-    author match {
-      case Name(first) => println("Name1: " + first)
-      case Name(first, last) => println("Name2: " + first + ", " + last)
-      case Name(first, middle, last) => println("Name3: " + first + ", " + middle + ", " + last)
-      case _ => println("Name Unknown")
-    }
+    meet(Name("aaa"))
+    meet(Name("aaa bbb"))
+    meet(Name("aaa bbb ccc"))
+    meet(Name("aaa bbb ccc ddd"))
   }
 }
 

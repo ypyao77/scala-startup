@@ -2,7 +2,7 @@ package fn.scala.fast.ch05
 
 import java.util.Date
 
-object D53 {
+object D0503 {
   class Message {
     val timestamp = new Date
   }

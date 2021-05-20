@@ -1,6 +1,6 @@
 package fn.scala.fast.ch06
 
-object D63 {
+object D0603 {
   abstract class UndoableAction(val description: String) {
     def undo(): Unit
     def redo(): Unit

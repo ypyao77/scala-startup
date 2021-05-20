@@ -1,6 +1,6 @@
 package fn.scala.fast.ch06
 
-object D64 {
+object D0604 {
   class Account(val id: Long, val _balance: Long) {
     private val balance = _balance
 

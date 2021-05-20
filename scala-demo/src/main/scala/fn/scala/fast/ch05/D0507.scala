@@ -1,6 +1,6 @@
 package fn.scala.fast.ch05
 
-object D57 {
+object D0507 {
   class Person(val name: String, val age: Int) {
     override def toString(): String = {
       "Person(" + name + ", " + age +")"

@@ -1,7 +1,7 @@
 package fn.scala.fast.ch05
 
 import scala.beans.BeanProperty
-object D54 {
+object D0504 {
   class Person1 {
     @BeanProperty var name = ""
   }
